@@ -48,7 +48,7 @@ end
 p common_elements([[1,2,3,4,5,6], [2,3,4,5], [3,4,5,10,16]])    #=> [3, 4, 5]
 ```
 
-## Using #inject with a default string to sentence string from an array of words
+## Using #inject with a default string to create a sentence string from an array of words
 The #inject method can be used to create a sentence string from an array of words by setting the default to a string.
 ```ruby
 def create_sentence(string)
