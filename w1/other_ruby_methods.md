@@ -118,3 +118,11 @@ a = [18, 22, 33, nil, 5, 6]
 a.rotate          #=> [22, 33, nil, 5, 6, 18]
 a.rotate(4)       #=> [5, 6, 18, 22, 33, nil]
 ```
+
+## #is_a?
+Returns true if class is the class of obj, or if class is one of the superclasses of obj or modules included in obj.
+
+```ruby
+"hello".is_a?(String)         #=> true
+[1,2,3].is_a?(Array)          #=> true
+```
