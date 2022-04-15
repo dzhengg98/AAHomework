@@ -45,7 +45,7 @@ The #inject method can be used to find common elements between multiple arrays.
 
 ```ruby
 def common_elements(array)
-  array.inject {|common, array| common & array}
+  array.inject {|common, subarray| common & subarray}
 end
 
 p common_elements([[1,2,3,4,5,6], [2,3,4,5], [3,4,5,10,16]])    #=> [3, 4, 5]
