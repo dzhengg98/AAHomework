@@ -40,4 +40,11 @@
   <% if logged_in? %>
     <a href="<%= new_cat_rental_request_url(cat_id: @cat.id) %>">Make new request</a>
   <% end %>
+
+  <footer>
+    <p>View our beautiful cat named "<%= @cat.name %>" </p>
+    <% content_for :footer do %>
+      <p>This is a cat's individual page.</p>
+    <% end %>
+  </footer>
 </div></section>
