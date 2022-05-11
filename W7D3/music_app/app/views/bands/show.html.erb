@@ -1,0 +1,6 @@
+<h1> Welcome to <%= @band.name %>'s page </h1>
+<a href="<%= bands_url %>">Home</a>
+<br>
+<a href="<%= edit_band_url %>">Edit band</a>
+<br>    
+<%= link_to "Delete band", @band, :method => :delete%>
