@@ -88,7 +88,7 @@ console.log(isSubstring("Jump for joy", "joys"));
 // fizzBuzz
 let fizzBuzz = function(array) {
   let newArray = [];
-  for(i=0; i<array.length; i++) {
+  for(let i=0; i<array.length; i++) {
     let num = array[i];
     if (((num % 3 === 0) || (num % 5 === 0)) && !((num % 3 === 0) && (num % 5 === 0))) {
       newArray.push(num);
@@ -101,7 +101,7 @@ console.log(fizzBuzz([3,5,11,16, 15]));
 
 // isPrime
 let isPrime = function(number) {
-  for(i=2; i<number; i++) {
+  for(let i=2; i<number; i++) {
     if (number % i === 0) {
       return false;
     };
@@ -130,7 +130,7 @@ let firstNPrimes = function(number) {
 let sumOfNPrimes = function(number) {
   let sum = 0;
   let array = firstNPrimes(number);
-  for(i=0; i<array.length; i++) {
+  for(let i=0; i<array.length; i++) {
     sum += array[i];
   };
   return sum;
